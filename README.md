@@ -24,3 +24,5 @@ cd enablenotch
 ./enablenotch.sh
 ```
 then reboot
+
+Done!
