@@ -11,7 +11,9 @@ also... if you need this script because you cant enable notch manually...  arch 
 
 make sure you have git installed:
 ```
-pacman -Q git
+pacman -Qi git
+#or
+git --version
 ```
 if its not installed:
 
@@ -23,7 +25,7 @@ installing the script:
 ```bash
 git clone https://github.com/shredos67/enablenotch.git
 cd enablenotch
-./enablenotch.sh
+sudo ./enablenotch.sh
 ```
 then reboot
 
