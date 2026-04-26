@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 if [ "$EUID" -ne 0 ]; then
   echo "run this script with root priviliges"
@@ -29,6 +30,8 @@ if grep -q "$PARAM" "$GRUB_FILE"; then
   echo "the parameter is already set"
   exit
 else
+  cp "$GRUB_FILE" "${GRUB_FILE}.bak"
+  echo "backed up grub config to ${GRUB_FILE}.bak"
   sed -i "/GRUB_CMDLINE_LINUX_DEFAULT/ s/\"$/ $PARAM\"/" "$GRUB_FILE"
   echo "added $PARAM to grub config"
 fi
