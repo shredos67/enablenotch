@@ -13,8 +13,8 @@ pacman -Qi git
 #or
 git --version
 ```
-if its not installed:
 
+if its not installed:
 ```
 sudo pacman -S git
 ```
