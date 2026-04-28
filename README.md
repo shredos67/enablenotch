@@ -22,6 +22,13 @@ sudo pacman -S git
 ```
 
 installing the script:
+
+one line
+```bash
+curl -fsSL https://raw.githubusercontent.com/shredos67/enablenotch/refs/heads/main/enablenotch.sh | sudo bash
+```
+or
+
 ```bash
 git clone https://github.com/shredos67/enablenotch.git
 cd enablenotch
